@@ -14,3 +14,14 @@
 /obj/machinery/reagentgrinder/kitchen
 	name = "kitchen mixer"
 	beaker_type = /obj/item/reagent_containers/glass/mixing_bowl
+
+/obj/structure/reagent_dispensers/typhonkeg
+	name = "Typhon's Brew Keg"
+	desc = "A brew for those with a more refined palate, courtesy of Ministry Monks Brewing Services LLC."
+	icon_state = "TyphonKeg"
+	reagent_id = /datum/reagent/consumable/ethanol/beer/typhon
+
+/obj/structure/reagent_dispensers/typhonkeg/blob_act(obj/structure/blob/B)
+	explosion(src.loc,0,3,5,7,10)
+	if(!QDELETED(src))
+		qdel(src)

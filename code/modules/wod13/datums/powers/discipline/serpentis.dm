@@ -14,6 +14,7 @@
 /datum/discipline/serpentis/post_gain()
 	. = ..()
 	owner.mind.teach_crafting_recipe(/datum/crafting_recipe/typhon_brew)
+	owner.mind.teach_crafting_recipe(/datum/crafting_recipe/typhon_brew_barrel)
 
 
 //THE EYES OF THE SERPENT

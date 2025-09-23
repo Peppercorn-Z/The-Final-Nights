@@ -6,6 +6,14 @@
 	category = CAT_DRUGS
 	always_available = FALSE
 
+/datum/crafting_recipe/typhon_brew_barrel
+	name = "Typhon's Brew Barrel"
+	reqs = list(/datum/reagent/consumable/ethanol/beer = 150, /datum/reagent/blood/vitae = 1000)
+	result = /obj/structure/reagent_dispensers/typhonkeg
+	time = 1 SECONDS
+	category = CAT_DRUGS
+	always_available = FALSE
+
 /datum/crafting_recipe/food/meatbread
 	name = "Meat bread"
 	reqs = list(
